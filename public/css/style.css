@@ -1,0 +1,48 @@
+body {
+    background-image: url('../assets/bg.png');
+    background-size: cover;
+    background-color: white !important;
+}
+
+/* PUZZLE CSS */
+
+#myCanvas {
+  position: absolute !important;
+  height: 982px !important;
+  left: 50px !important;
+  top: 49px !important;
+  background-color: rgb(238, 237, 237) !important;
+} 
+
+  .container{
+      margin-left: 253% !important;
+      margin-top: 69%;
+
+    }
+
+    #countdown{
+      margin-left: 94vw;
+      margin-top: -7.58%;
+  }
+
+    #countdown-number{
+      font-size: -webkit-xxx-large;
+      font-weight: bold;
+    }
+
+    #clock{
+      height: 235px;
+    }
+    .seconds-container {
+      position: absolute;
+      left: 242%;
+      bottom: -14%;
+      /* animation: rotate 30s steps(30); */    
+      animation: rotate 30s steps(30);
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotateZ(180deg);
+    }
+  }

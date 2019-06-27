@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+
+      body {
+        overflow: hidden !important;
+        background-attachment: fixed;
+      }
+
+      #play {
+        position: relative;
+        top: 87vh;
+        left: 41vw;
+        height: 85px;
+      }
+
+      #hyundai{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+      }
+    </style>
+    <title>Jig-Saw</title>
+  </head>
+  <body>
+      <video autoplay loop width="1920" height="1080" id="hyundai">
+          <source src="./assets/1a.mp4" type="video/mp4">
+       </video>
+       
+        <div class="col-12">
+          <div class="row">      
+            <a href="./registration.html"><img id="play" src="./assets/click.png"/></a>
+          </div>
+         </div>  
+             
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        document.getElementById("hyundai").load();
+    console.log('All assets are loaded')
+  })
+
+      
+    </script>
+ 
+  </body>
+</html>

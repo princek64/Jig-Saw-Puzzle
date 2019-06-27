@@ -1,0 +1,483 @@
+#register{
+    background-image: url('../assets/register/bgw.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    height: 100vh;
+    background-position: fixed;
+    background-attachment: fixed;
+    position: sticky;
+}
+
+
+.b-red{
+    border: 1px solid red;
+}
+
+#mtop{
+    margin-top: 78vh;
+}
+
+#marg-top{
+    margin-top: 38vh;
+}
+
+#margin-top{
+    margin-top: 16vh;
+    margin-right: -2vw;
+}
+
+#bg-white-register{
+    margin-top: 2rem!important;
+    background-color: white!important;
+    padding: 3rem;
+    box-shadow: 1px 1px 1px 1px #D5D8DC;
+    border-radius: 0.2rem;
+    border: 2px solid #D5D8DC;
+}
+
+
+.b-none{
+    border: 0px !important;
+    border-radius: 0.3rem;
+}
+
+
+.jkeyboard {
+  display: inline-block;
+}
+
+.jkeyboard,
+.jkeyboard .jline,
+.jkeyboard .jline ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.jkeyboard .jline {
+  text-align: center;
+  margin-left: -14px;
+}
+
+.jkeyboard .jline ul li {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+  border: 1px solid #cf1919;
+  -webkit-box-shadow: 0 0 3px #cf1919;
+  -webkit-box-shadow: inset 0 0 3px #cf1919;
+  margin: 10px 0 1px 14px;
+  color: #030303;
+  border-radius: 5px;
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 52px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.jkeyboard .jline ul li.uppercase {
+  text-transform: uppercase;
+}
+
+.jkeyboard .jline ul li:hover,
+.jkeyboard .jline ul li:active {
+  background-color: #cf1919;
+}
+
+.jkeyboard .jline .return {
+  width: 120px;
+}
+
+.jkeyboard .jline .space {
+  width: 456px;
+}
+
+.jkeyboard .jline .numeric_switch {
+  width: 84px;
+}
+
+.jkeyboard .jline .layout_switch {
+  background: url("../assets/locale.png") no-repeat center right;
+}
+
+.jkeyboard .jline .shift {
+  width: 100px;
+  background: url("../assets/register/2.png") no-repeat center center;
+}
+
+.jkeyboard .jline .backspace {
+  width: 69px;
+  background: url("../assets/register/1.png") no-repeat center center;
+}
+.hide{
+  display: none;
+}
+
+
+body { font-size: 14px; }
+
+h2 { font-size: 20px; }
+form input {
+    font-size: 1.2em;
+    height: auto;
+    padding: 0.5em;
+}
+form label {
+    display: block;
+    font-size: 14px;
+    padding: 10px 0 0 0;
+}
+.fieldset-grouping {
+    clear: both;
+}
+
+.ui-keyboard-nav button {}
+
+/* position keyboard at bottom of the screen - jQuery UI isn't even loaded! */
+.ui-keyboard {
+    -moz-box-shadow: 0 -15px 15px #FFFFFF;
+    -webkit-box-shadow: 0 -15px 15px #FFFFFF;
+    -ms-box-shadow: 0 -15px 15px #FFFFFF;
+    -o-box-shadow: 0 -15px 15px #FFFFFF;
+    box-shadow: 0 -15px 15px #FFFFFF;
+    -moz-border-radius: 0 0 0 0 !important;
+    -webkit-border-radius: 0 0 0 0 !important;
+    -ms-border-radius: 0 0 0 0 !important;
+    -o-border-radius: 0 0 0 0 !important;
+    border-radius: 0 0 0 0 !important;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    left: 0px !important;
+    top: auto !important;
+    bottom: 0px;
+    position: fixed !important;
+    width: 100%;
+}
+.ui-keyboard button {
+    padding: 0.257em 0.65em 0.397em !important;
+    width: auto !important;
+}
+.ui-keyboard button.ui-keyboard-space {width: 15em !important;}
+.ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-size: 0.9em !important;
+}
+.ui-widget input {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
+    font-size: 1.75em !important;
+    padding: 0.5em !important;
+}
+input.ui-keyboard-input {
+    background: #ffffff !important;
+}
+
+input.current {
+    border: 1px solid #1581EF !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3), 0 0 4px rgba(21, 129, 239, 0.5) inset !important;
+}
+
+.submit-grouping {
+    margin-top: 30px;
+}
+div#keyboard{
+    width: 100%;
+    position: fixed;
+    bottom: 90px;
+    left:110px;
+    /* padding-left: 5.5% !important;
+    padding-right: 5.5% !important; */
+}
+
+div#keyboard div{
+    padding: 1px 1px 1px 1px !important;
+}
+
+div#keyboard div#gatekeeper{
+    height: 215px;
+}
+
+div#keyboard button.uppercase{
+    text-transform: uppercase;
+}
+
+div#keyboard #numpad
+{
+    padding:  3px 0 0 3px !important;
+    width: 166px;
+    border-radius: 0 5px 5px 0;
+}
+
+div#keyboard #keypad
+{
+    padding:  3px 3px 0 2px !important;
+    border-radius: 5px 0 0 5px;
+}
+div#keyboard1{
+    width: 100%;
+    position: fixed;
+    bottom: 90px;
+    /* bottom: 20px; */
+    left:110px;
+    padding-left: 5.5% !important;
+    padding-right: 5.5% !important;
+}
+
+div#keyboard1 div{
+    padding: 1px 1px 1px 1px !important;
+}
+
+div#keyboard1 div#gatekeeper{
+    height: 215px;
+}
+
+div#keyboardbutton.uppercase{
+    text-transform: uppercase;
+}
+
+div#keyboard1 #numpad
+{
+    padding:  3px 0 0 3px !important;
+    width: 166px;
+    border-radius: 0 5px 5px 0;
+}
+
+div#keyboard1 #keypad
+{
+    padding:  3px 3px 0 2px !important;
+    border-radius: 5px 0 0 5px;
+}
+
+
+div#keyboard2{
+  width: 100%;
+  position: fixed;
+  bottom: 90px;
+  /* bottom: 20px; */
+  left:110px;
+  padding-left: 5.5% !important;
+  padding-right: 5.5% !important;
+}
+
+div#keyboard2 div{
+  padding: 1px 1px 1px 1px !important;
+}
+
+div#keyboard2 div#gatekeeper{
+  height: 215px;
+}
+
+div#keyboard2 #numpad
+{
+  padding:  3px 0 0 3px !important;
+  width: 166px;
+  border-radius: 0 5px 5px 0;
+}
+
+div#keyboard2 #keypad
+{
+  padding:  3px 3px 0 2px !important;
+  border-radius: 5px 0 0 5px;
+}
+
+
+
+
+/*@media screen and (min-width: 700px)*/
+@media screen and (min-width: 700px)
+{
+    div#keypad button.char{
+        /*width: 50px;            /* Ancho de las teclas */
+        width: 8.5%;            /* Ancho de las teclas */
+    }
+    div#numpad button.char{
+        width: 30%;            /* Ancho de las teclas */
+
+    }
+    div#keyboard button
+    {
+        height: 50px;           /* Alto de las teclas */
+        float: left;
+        margin: 0 0 3px 3px;
+        text-align: center;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        cursor: pointer;
+    }
+
+    div#keyboard button.div
+    {
+        width: 4%;
+        background: transparent !important;
+        border: none !important;
+        cursor: default;
+    }
+
+    div#keyboard button.backspace
+    {
+        width: 9.5%;
+    }
+
+    div#keyboard button.delete
+    {
+        width:11%;
+    }
+
+    div#keyboard button.capslock
+    {
+        width:18.5%;
+    }
+
+    div#keyboard button.submit
+    {
+        width: 62.5%;
+    }
+
+    div#keyboard button.enter
+    {
+        width: 12%;
+    }
+
+    div#keyboard button.shift
+    {
+        width: 12.5%;
+    }
+
+    div#keyboard button.space
+    {
+        width:99.5%;
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+/*@media only screen and (min-width: 481px) and (max-width: 768px) {
+    div#gatekeeper{
+        width: 300px;
+    }
+}*/
+
+/* Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) {
+
+}*/
+
+/* Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) {  }*/
+
+/*********************************/
+/**** Temas para el keyboard  ****/
+/*********************************/
+
+/*********** default **********/
+div#keyboard .default{
+    background:#eee;        /* Color de fondo del teclado */
+    font-size:14px;         /* Tamaño de la letra */
+
+    /* Tipo de letra */
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+div#keyboard .default button{
+    background:#fff;                /* Color de las teclas */
+    border:1px solid #cacaca;       /* borde de las teclas */
+}
+
+/* Teclas especiales activas. Ejemplo: Shift y CapsLock */
+div#keyboard .default button.active{
+    background-color: #d2ffc3;
+    border-color:#6FDA54;
+    font-weight: bold;
+}
+
+/* Color de las teclas al pasarle por encima */
+div#keyboard .default button:hover{
+    background-color:#FFD488;
+    border-color: #ff994b;
+    font-weight: bold;
+}
+
+
+/*********** monokai **********/
+div#keyboard .monokai{
+    background: #3c3f41;        /* Color de fondo del teclado */
+    font-size:14px;             /* Tamaño de la letra */
+
+
+    /* Tipo de letra */
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+div#keyboard .monokai button{
+    /* Color de las teclas */
+    background: -webkit-radial-gradient(#3e4858, #2e4058);
+    background: -moz-radial-gradient(#3e4858, #2e4058);
+    background: -o-radial-gradient(#3e4858, #2e4058);
+
+    border:2px solid #51668c;           /* borde de las teclas */
+
+    color: #c4d9ee;                     /* Color de la letra*/
+    font-weight: bold;                  /* Letras en negrita */
+}
+
+/* Teclas especiales activas. Ejemplo: Shift y CapsLock */
+div#keyboard .monokai button.active{
+    background: #d2ffc3;
+    border-color:#6FDA54;
+
+    color: black;                       /* Color de la letra*/
+    font-weight: bold;                  /* Letras en negrita */
+}
+
+/* Color de las teclas al pasarle por encima */
+div#keyboard .monokai button:hover{
+    background: #ffeebc;
+    border-color: #dcaf93;
+    color: #2e4058;
+    font-weight: bold;
+}
+
+
+/*********** orange **********/
+div#keyboard .orange{
+    background: #3c3f41;        /* Color de fondo del teclado */
+    font-size:14px;             /* Tamaño de la letra */
+    color: #c4d9ee;
+    font-weight: bold;
+
+    /* Tipo de letra */
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+div#keyboard .orange button{
+    background: #ffd97f;                /* Color de las teclas */
+    border:2px solid #51668c;           /* borde de las teclas */
+}
+
+/* Teclas especiales activas. Ejemplo: Shift y CapsLock */
+div#keyboard .orange button.active{
+    background-color: #d2ffc3;
+    border-color:#6FDA54;
+    font-weight: bold;
+}
+
+/* Color de las teclas al pasarle por encima */
+div#keyboard .orange button:hover{
+    background-color:#FFD488;
+    border-color:#FFAE6E;
+    color: #2e4058;
+    font-weight: bold;
+}
+/* .key {
+    position: absolute;
+    bottom: 10vh;
+  } */

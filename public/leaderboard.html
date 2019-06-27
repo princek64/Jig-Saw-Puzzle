@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+    #table1 {
+      margin-top: 13vh !important;
+      width: 53em;
+      height: 20em;
+    }
+    .offset-2 {
+    margin-left: 62.666667%;
+  }
+  .table-dark {
+    color: #fff;
+    background-color: black;
+  }
+
+  .offset-9 {
+    margin-left: 68%;
+    margin-top: 26%;
+    position: fixed;
+}
+  </style>
+  <title>Document</title>
+</head>
+
+<body style="background: url('./assets/bg_leaderboard.png'); overflow:hidden; ">
+  <div class="container mt-5">
+    <div class="col-8 offset-2">
+      <table id="example" class="table table-bordered table-dark " style="margin-top: 11vh;">
+        <thead class="text-center">
+          <!-- <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Score</th>
+          </tr> -->
+        </thead>
+        <tbody id="datamerg" class="text-center" >
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row offset-9">
+    <a href="./registration.html">
+      <img style="height: 80px" src="./assets/click.png">
+    </a>
+    
+  </div>
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/socket.io.js"></script>
+  <script src="./js/leader.js"></script>
+  <script>
+    setTimeout(() => {
+      window.location.href = "./index.html";
+    }, 8000);
+  </script>
+</body>
+</html>

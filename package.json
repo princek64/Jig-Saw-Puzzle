@@ -1,0 +1,26 @@
+{
+  "name": "jigsaw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/tagg_project/jigsaw-hundai.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/tagg_project/jigsaw-hundai/issues"
+  },
+  "homepage": "https://gitlab.com/tagg_project/jigsaw-hundai#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "nodemon": "^1.19.0",
+    "socket.io": "^2.2.0",
+    "sqlite3": "^4.0.8",
+    "sweetalert2": "^8.11.1"
+  }
+}

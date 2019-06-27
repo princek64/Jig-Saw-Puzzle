@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/sweet.css">
+    
+      
+    <title>Youtube</title>
+</head>
+<body style="overflow: hidden" id="register">
+    <div class="container-fluid clearfix">
+            <!-- <a href="./index.html" class="btn mt-4">
+                <img src="./assets/register/back_button.png" class="img-fluid">
+            </a>
+            <a href="./index.html" class="btn mt-4 mr-5 float-right">
+        </a> -->
+    </div>
+    <div class="container animated fadeIn" id="margin-top">
+    <div class="col-md-4 offset-md-4 text-center">
+        <h2 class="font-weight-bold" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 2.55rem;">Register New</h2>
+        <form class="form mt-3" id="bg-white-register">
+            
+            <div class="group form-group"> 
+                <div class="hide" id="k2">
+                    <div id="keyboard1" style="margin-left: 16.6vw!important;"></div>
+                </div>     
+                <input type="text" class="form-control" onclick="enable2()"id="namep1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Full Name</label>
+            </div>    
+            <div class="group form-group"> 
+                    <div class="hide" id="k1">
+                        <div id="keyboard" style="margin-left: 16.6vw!important;"></div>
+                    </div>                    
+                    <input type="text" class="form-control" onclick="enable1()"
+                    id="emailp1" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+
+                <div class="group form-group"> 
+                        <div class="hide" id="k3">
+                            <div id="keyboard2" style="margin-left: 16.6vw!important;"></div>
+                        </div>                    
+                        <input type="text" class="form-control" onclick="enable3()"
+                        id="company" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Company</label>
+                    </div>
+                <a class="btn mt-3" onclick="saveData();">
+                    <img src="./assets/register/click.png">
+                </a>
+            </form>
+        </div>
+    </div>
+
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/sweet.js"></script>
+<script src="./js/socket.io.js"></script>   
+<script src="js/virtual.js"></script>
+<script src="js/jKeyboard.js"></script>  
+<script src="js/idle.js"></script>
+<script src="js/register.js"></script>
+
+</body>
+</html>
